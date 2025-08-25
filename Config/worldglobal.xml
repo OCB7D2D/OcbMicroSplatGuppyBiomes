@@ -200,6 +200,15 @@
 				<property name="erosion-curve-mode" value="Curve"/>
 				<property name="cavity-curve-mode" value="Curve"/>
 			</biome-layer>
+
+			<!-- update cliff to show also for Biome 6 to 8 -->
+			<biome-layer name="Layer0">
+				<!-- Reuse snow biome cliff layer in new biomes -->
+				<property name="biome-weight-6" value="1.0"/>
+				<property name="biome-weight-7" value="1.0"/>
+				<property name="biome-weight-8" value="1.0"/>
+			</biome-layer>
+
 		</biomes-config>
 
 	</append>
