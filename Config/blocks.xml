@@ -2,47 +2,12 @@
 
 	<append xpath="/blocks">
 
-		<!--BiomeBlocks -->
-		<!--
 		<block name="gupTerrainFlatGrass" map-only="Test Biomes">
 			<property name="Extends" value="terrDirt"/>
-			<property name="TerrainIndex" value="custom1"/>
-			<property name="MicroSplatVoxel" value="voxel1"/>
+			<property name="TerrainIndex" value="gupTextureFlatGrass"/>
+			<property name="MicroSplatVoxel" value="gupVoxelFlatGrass"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<property name="Map.Color" value="0,170,0"/>
-			<property name="ImposterExclude" value="true"/>
-			<property name="SortOrder1" value="0000"/>
-			<property name="SortOrder2" value="0550"/>
-		</block>
-
-		<block name="gupTerrainForest" map-only="Test Biomes">
-			<property name="Extends" value="terrDirt"/>
-			<property name="TerrainIndex" value="custom2"/>
-			<property name="MicroSplatVoxel" value="voxel2"/>
-			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<property name="Map.Color" value="0,47,3"/>
-			<property name="ImposterExclude" value="true"/>
-			<property name="SortOrder1" value="0000"/>
-			<property name="SortOrder2" value="0550"/>
-		</block>
-
-		<block name="gupTerrainDirt" map-only="Test Biomes">
-			<property name="Extends" value="terrDirt"/>
-			<property name="TerrainIndex" value="custom3"/>
-			<property name="MicroSplatVoxel" value="voxel3"/>
-			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<property name="Map.Color" value="170,106,0"/>
-			<property name="ImposterExclude" value="true"/>
-			<property name="SortOrder1" value="0000"/>
-			<property name="SortOrder2" value="0550"/>
-		</block>
-
-		<block name="gupTerrainStone" map-only="Test Biomes">
-			<property name="Extends" value="terrDirt"/>
-			<property name="TerrainIndex" value="custom4"/>
-			<property name="MicroSplatVoxel" value="voxel4"/>
-			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<property name="Map.Color" value="128,128,128"/>
+			<property name="Map.Color" value="118,158,48"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="SortOrder1" value="0000"/>
 			<property name="SortOrder2" value="0550"/>
@@ -50,30 +15,8 @@
 
 		<block name="gupTerrainColdLava" map-only="Test Biomes">
 			<property name="Extends" value="terrDirt"/>
-			<property name="TerrainIndex" value="custom5"/>
-			<property name="MicroSplatVoxel" value="voxel5"/>
-			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<property name="Map.Color" value="118,158,48"/>
-			<property name="ImposterExclude" value="true"/>
-			<property name="SortOrder1" value="0000"/>
-			<property name="SortOrder2" value="0550"/>
-		</block>
-
-		<block name="gupTerrainSwamp" map-only="Test Biomes">
-			<property name="Extends" value="terrDirt"/>
-			<property name="TerrainIndex" value="custom6"/>
-			<property name="MicroSplatVoxel" value="voxel6"/>
-			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<property name="Map.Color" value="118,158,48"/>
-			<property name="ImposterExclude" value="true"/>
-			<property name="SortOrder1" value="0000"/>
-			<property name="SortOrder2" value="0550"/>
-		</block>
-
-		<block name="gupTerrainSnow" map-only="Test Biomes">
-			<property name="Extends" value="terrDirt"/>
-			<property name="TerrainIndex" value="custom7"/>
-			<property name="MicroSplatVoxel" value="voxel7"/>
+			<property name="TerrainIndex" value="gupTextureColdLava"/>
+			<property name="MicroSplatVoxel" value="gupVoxelColdLava"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
 			<property name="Map.Color" value="118,158,48"/>
 			<property name="ImposterExclude" value="true"/>
@@ -83,26 +26,14 @@
 
 		<block name="gupTerrainOrc" map-only="Test Biomes">
 			<property name="Extends" value="terrDirt"/>
-			<property name="TerrainIndex" value="custom8"/>
-			<property name="MicroSplatVoxel" value="voxel8"/>
+			<property name="TerrainIndex" value="gupTextureOrc"/>
+			<property name="MicroSplatVoxel" value="gupVoxelOrc"/>
 			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
 			<property name="Map.Color" value="118,158,48"/>
 			<property name="ImposterExclude" value="true"/>
 			<property name="SortOrder1" value="0000"/>
 			<property name="SortOrder2" value="0550"/>
-		</block>	
+		</block>
 
-
-		<block name="gupTerrainSnowWithGrass" map-only="Test Biomes">
-			<property name="Extends" value="terrDirt"/>
-			<property name="TerrainIndex" value="custom9"/>
-			<property name="MicroSplatVoxel" value="voxel9"/>
-			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
-			<property name="Map.Color" value="252,252,252"/>
-			<property name="ImposterExclude" value="true"/>
-			<property name="SortOrder1" value="0000"/>
-			<property name="SortOrder2" value="0550"/>
-		</block>	
--->		
 	</append>
 </configs>

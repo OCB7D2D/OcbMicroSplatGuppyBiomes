@@ -2,19 +2,19 @@
 	<append xpath="/worldglobal">
 		<biomes-config world="Test Biomes">
 
-			<!-- reduce biome layers for existing X config (biome 1) -->
+			<!-- reduce biome layers for existing snow biome config (biome 1) -->
 			<!-- <biome-layer index="0"><property name="biome-weight-1" value="0.0"/></biome-layer> --><!-- texture id 19 -->
 			<!-- <biome-layer index="1"><property name="biome-weight-1" value="0.0"/></biome-layer> --><!-- texture id 0 -->
 
-			<!-- reduce biome layers for existing X config (biome 2) -->
+			<!-- reduce biome layers for existing pine forest biome config (biome 2) -->
 			<!-- <biome-layer index="2"><property name="biome-weight-2" value="0.0"/></biome-layer> --><!-- texture id 19 -->
 			<!-- <biome-layer index="3"><property name="biome-weight-2" value="0.0"/></biome-layer> --><!-- texture id 2 -->
 
-			<!-- reduce biome layers for existing X config (biome 3) -->
+			<!-- reduce biome layers for existing burnt forest biome config (biome 3) -->
 			<!-- <biome-layer index="4"><property name="biome-weight-3" value="0.0"/></biome-layer> --><!-- texture id 10 -->
 			<!-- <biome-layer index="5"><property name="biome-weight-3" value="0.0"/></biome-layer> --><!-- texture id 19 -->
 
-			<!-- reduce biome layers for existing X config (biome 4) -->
+			<!-- reduce biome layers for existing wasteland biome config (biome 4) -->
 			<!-- <biome-layer index="6"><property name="biome-weight-4" value="0.0"/></biome-layer> --><!-- texture id 10 -->
 			<!-- <biome-layer index="7"><property name="biome-weight-4" value="0.0"/></biome-layer> --><!-- texture id 8 -->
 
@@ -79,9 +79,43 @@
 				<property name="cavity-active" value="false"/>
 			</biome-layer>
 
-
 		</biomes-config>
 
+		<!-- now adding custom textures -->
+
+		<microsplat-texture name="gupTextureFlatGrass">
+			<property name="Diffuse" value="#@modfolder:Resources/testBiomes01.unity3d?testBiomes01_diff_tarray[0]"/>
+			<property name="Normal" value="#@modfolder:Resources/testBiomes01.unity3d?testBiomes01_norm_tarray[0]"/>
+			<property name="Specular" value="#@modfolder:Resources/testBiomes01.unity3d?testBiomes01_shao_tarray[0]"/>
+			<property name="SwitchNormal" value="false"/>
+			<property name="SplatUVScale" value="4,4"/>
+		</microsplat-texture>
+
+		<microsplat-texture name="gupTextureColdLava">
+			<property name="Diffuse" value="#@modfolder:Resources/testBiomes02.unity3d?testBiomes02_diff_tarray[0]"/>
+			<property name="Normal" value="#@modfolder:Resources/testBiomes02.unity3d?testBiomes02_norm_tarray[0]"/>
+			<property name="Specular" value="#@modfolder:Resources/testBiomes02.unity3d?testBiomes02_shao_tarray[0]"/>
+			<property name="SwitchNormal" value="false"/>
+			<property name="SplatUVScale" value="4,4"/>
+		</microsplat-texture>
+
+		<microsplat-texture name="gupTextureOrc">
+			<property name="Diffuse" value="#@modfolder:Resources/testBiomes01.unity3d?testBiomes01_diff_tarray[3]"/>
+			<property name="Normal" value="#@modfolder:Resources/testBiomes01.unity3d?testBiomes01_norm_tarray[3]"/>
+			<property name="Specular" value="#@modfolder:Resources/testBiomes01.unity3d?testBiomes01_shao_tarray[3]"/>
+			<property name="SwitchNormal" value="false"/>
+			<property name="SplatUVScale" value="3,3"/>
+		</microsplat-texture>
+
+		<microsplat-voxel name="gupVoxelFlatGrass">
+			<texture name="gupTextureFlatGrass" weight="1"/>
+		</microsplat-voxel>
+		<microsplat-voxel name="gupVoxelColdLava">
+			<texture name="gupTextureColdLava" weight="1"/>
+		</microsplat-voxel>
+		<microsplat-voxel name="gupVoxelOrc">
+			<texture name="gupTextureOrc" weight="1"/>
+		</microsplat-voxel>
 
 	</append>
 </configs>
