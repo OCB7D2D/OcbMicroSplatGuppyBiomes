@@ -1,0 +1,53 @@
+<configs>
+	<append xpath="/worldglobal">
+		<biomes-config world="Test Biomes">
+
+			<!-- reduce biome layers for existing X config (biome 1) -->
+			<biome-layer index="0"><property name="biome-weight-1" value="0.0"/></biome-layer><!-- texture id 19 -->
+			<biome-layer index="1"><property name="biome-weight-1" value="0.0"/></biome-layer><!-- texture id 0 -->
+
+			<!-- reduce biome layers for existing X config (biome 2) -->
+			<biome-layer index="2"><property name="biome-weight-2" value="0.0"/></biome-layer><!-- texture id 19 -->
+			<biome-layer index="3"><property name="biome-weight-2" value="0.0"/></biome-layer><!-- texture id 2 -->
+
+			<!-- reduce biome layers for existing X config (biome 3) -->
+			<biome-layer index="4"><property name="biome-weight-3" value="0.0"/></biome-layer><!-- texture id 10 -->
+			<biome-layer index="5"><property name="biome-weight-3" value="0.0"/></biome-layer><!-- texture id 19 -->
+
+			<!-- reduce biome layers for existing X config (biome 4) -->
+			<biome-layer index="6"><property name="biome-weight-4" value="0.0"/></biome-layer><!-- texture id 10 -->
+			<biome-layer index="7"><property name="biome-weight-4" value="0.0"/></biome-layer><!-- texture id 8 -->
+
+			<!-- reduce biome layers for existing desert config (biome 5) -->
+			<biome-layer index="8"><property name="biome-weight-5" value="0.0"/></biome-layer><!-- texture id 7 -->
+			<biome-layer index="9"><property name="biome-weight-5" value="0.0"/></biome-layer><!-- texture id 20 -->
+			<biome-layer index="10"><property name="biome-weight-5" value="0.0"/></biome-layer><!-- texture id 12 -->
+			<biome-layer index="11"><property name="biome-weight-5" value="0.0"/></biome-layer><!-- texture id 11 -->
+
+			<!-- overwrite main texture for existing biome 2 (use texture id 2) -->
+			<!--
+			<microsplat-patch index="2">
+				<property name="Diffuse" value="#@modfolder:Resources/testGuppyBiomes.unity3d?TestBiomes_diff_tarray[0]"/>
+				<property name="Normal" value="#@modfolder:Resources/testGuppyBiomes.unity3d?TestBiomes_norm_tarray[0]"/>
+				<property name="Specular" value="#@modfolder:Resources/testGuppyBiomes.unity3d?TestBiomes_shao_tarray[0]"/>
+				<property name="SwitchNormal" value="false"/>
+				<property name="SplatUVScale" value="4,4"/>
+			</microsplat-patch>
+			-->
+
+			<!-- overwrite main texture for existing biome 5 (use texture id 2) -->
+			<!--
+			<microsplat-patch index="2">
+				<property name="Diffuse" value="#@modfolder:Resources/testGuppyBiomes.unity3d?TestBiomes_diff_tarray[2]"/>
+				<property name="Normal" value="#@modfolder:Resources/testGuppyBiomes.unity3d?TestBiomes_norm_tarray[2]"/>
+				<property name="Specular" value="#@modfolder:Resources/testGuppyBiomes.unity3d?TestBiomes_shao_tarray[2]"/>
+				<property name="SwitchNormal" value="false"/>
+				<property name="SplatUVScale" value="4,4"/>
+			</microsplat-patch>
+			-->
+
+		</biomes-config>
+
+
+	</append>
+</configs>

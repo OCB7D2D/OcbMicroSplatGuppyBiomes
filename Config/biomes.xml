@@ -1,0 +1,18 @@
+<configs>
+
+  <!-- nuke vanilla biomes completely to start -->
+  <!-- <remove xpath="/worldgeneration/biomes"/> -->
+
+  <!-- 
+
+  <append xpath="/worldgeneration">
+    <biomes>
+      <biomemap id="41" name="GuppyGrass" />
+      <biomemap id="42" name="GuppyForest" />
+      <biomemap id="43" name="GuppySnow" />
+      <biomemap id="44" name="GuppyLava" />
+    </biomes>
+  </append>
+  -->
+
+</configs>
