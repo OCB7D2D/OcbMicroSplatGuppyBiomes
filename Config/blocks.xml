@@ -1,6 +1,7 @@
 <configs>
 
 	<append xpath="/blocks">
+
 		<!--BiomeBlocks -->
 		<!--
 		<block name="gupTerrainFlatGrass" map-only="Test Biomes">
