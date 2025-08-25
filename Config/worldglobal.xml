@@ -117,5 +117,90 @@
 			<texture name="gupTextureOrc" weight="1"/>
 		</microsplat-voxel>
 
+		<biomes-config world="Test Biomes">
+			<!-- hook up values for distant terrain splat maps (biome masks) -->
+			<biome-color name="gupBiomeFlatGrass" color1="0,0,0,0" color2="0,1,0,0"/>
+			<biome-color name="gupBiomeColdLava" color1="0,0,0,0" color2="0,0,1,0"/>
+			<biome-color name="gupBiomeOrc" color1="0,0,0,0" color2="0,0,0,1"/>
+
+			<!-- we could just add new layers here, but we have some disabled -->
+			<!-- from the vanilla desert, so we re-use these for performance -->
+
+			<!-- <biome-layer name="gupLayerFlatGrassPlane"> -->
+			<biome-layer index="9">
+				<!-- Main/Absolute layer weight -->
+				<property name="weight" value="1.0"/>
+				<!-- Enable/Disable/Configure noise -->
+				<property name="noise-active" value="false"/>
+				<property name="noise-frequency" value="1.0"/>
+				<property name="noise-offset" value="0.0"/>
+				<property name="noise-range" value="0.0,1.0"/>
+				<!-- Disable/Enable certain features -->
+				<property name="height-active" value="false"/>
+				<property name="slope-active" value="false"/>
+				<property name="erosion-active" value="false"/>
+				<property name="cavity-active" value="false"/>
+				<!-- Index into MicroSplat Texture2DArray -->
+				<property name="microsplat-texture" value="gupTextureFlatGrass"/>
+				<!-- Defines what biome color layer reacts to -->
+				<property name="biome-weight-6" value="1.0"/>
+				<!-- Curve, BoostFilter, HighPass, LowPass, CutFilter -->
+				<property name="height-curve-mode" value="Curve"/>
+				<property name="slope-curve-mode" value="Curve"/>
+				<property name="erosion-curve-mode" value="Curve"/>
+				<property name="cavity-curve-mode" value="Curve"/>
+			</biome-layer>
+
+			<!-- <biome-layer name="gupLayerColdLavaPlane"> -->
+			<biome-layer index="10">
+				<!-- Main/Absolute layer weight -->
+				<property name="weight" value="1.0"/>
+				<!-- Enable/Disable/Configure noise -->
+				<property name="noise-active" value="false"/>
+				<property name="noise-frequency" value="1.0"/>
+				<property name="noise-offset" value="0.0"/>
+				<property name="noise-range" value="0.0,1.0"/>
+				<!-- Disable/Enable certain features -->
+				<property name="height-active" value="false"/>
+				<property name="slope-active" value="false"/>
+				<property name="erosion-active" value="false"/>
+				<property name="cavity-active" value="false"/>
+				<!-- Index into MicroSplat Texture2DArray -->
+				<property name="microsplat-texture" value="gupTextureColdLava"/>
+				<!-- Defines what biome color layer reacts to -->
+				<property name="biome-weight-7" value="1.0"/>
+				<!-- Curve, BoostFilter, HighPass, LowPass, CutFilter -->
+				<property name="height-curve-mode" value="Curve"/>
+				<property name="slope-curve-mode" value="Curve"/>
+				<property name="erosion-curve-mode" value="Curve"/>
+				<property name="cavity-curve-mode" value="Curve"/>
+			</biome-layer>
+
+			<!-- <biome-layer name="gupLayerOrcPlane"> -->
+			<biome-layer index="11">
+				<!-- Main/Absolute layer weight -->
+				<property name="weight" value="1.0"/>
+				<!-- Enable/Disable/Configure noise -->
+				<property name="noise-active" value="false"/>
+				<property name="noise-frequency" value="1.0"/>
+				<property name="noise-offset" value="0.0"/>
+				<property name="noise-range" value="0.0,1.0"/>
+				<!-- Disable/Enable certain features -->
+				<property name="height-active" value="false"/>
+				<property name="slope-active" value="false"/>
+				<property name="erosion-active" value="false"/>
+				<property name="cavity-active" value="false"/>
+				<!-- Index into MicroSplat Texture2DArray -->
+				<property name="microsplat-texture" value="gupTextureOrc"/>
+				<!-- Defines what biome color layer reacts to -->
+				<property name="biome-weight-8" value="1.0"/>
+				<!-- Curve, BoostFilter, HighPass, LowPass, CutFilter -->
+				<property name="height-curve-mode" value="Curve"/>
+				<property name="slope-curve-mode" value="Curve"/>
+				<property name="erosion-curve-mode" value="Curve"/>
+				<property name="cavity-curve-mode" value="Curve"/>
+			</biome-layer>
+		</biomes-config>
+
 	</append>
 </configs>

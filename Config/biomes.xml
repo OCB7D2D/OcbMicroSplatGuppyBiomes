@@ -15,4 +15,76 @@
   </append>
   -->
 
+  <append xpath="/worldgeneration/biomes">
+    <biomemap id="41" name="gupBiomeFlatGrass" map-only="Test Biomes"/>
+    <biomemap id="42" name="gupBiomeColdLava" map-only="Test Biomes" />
+    <biomemap id="43" name="gupBiomeOrc" map-only="Test Biomes" />
+
+    <biome name="gupBiomeFlatGrass" topsoil_block="gupTerrainFlatGrass" map-only="Test Biomes"
+      biomemapcolor="#D3D3D3" lootstage_modifier="0.35" lootstage_bonus="10"
+      gamestage_modifier="0.35" gamestage_bonus="10" difficulty="1">
+        <layers>
+          <!-- place custom top soil block -->
+          <layer depth="1" blockname="gupTerrainFlatGrass" />
+          <layer depth="2" blockname="terrDirt" />
+          <layer depth="*" blockname="terrStone">
+            <resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all" />
+            <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all" />
+          </layer>
+          <layer depth="3" blockname="terrBedrock" />
+        </layers>
+        <weather name="default" prob="83">
+          <Temperature min="65" max="70" prob="1" />
+          <CloudThickness min="10" max="70" prob="65" />
+          <Precipitation min="0" max="0" prob="1" />
+          <Fog min="0" max="2" prob="1" />
+          <Wind min="3" max="22" prob="1" />
+        </weather>
+    </biome>
+
+    <biome name="gupBiomeColdLava" topsoil_block="gupTerrainColdLava" map-only="Test Biomes"
+      biomemapcolor="#AA1410" lootstage_modifier="0.35" lootstage_bonus="10"
+      gamestage_modifier="0.35" gamestage_bonus="10" difficulty="1">
+        <layers>
+          <!-- place custom top soil block -->
+          <layer depth="1" blockname="gupTerrainColdLava" />
+          <layer depth="2" blockname="terrDirt" />
+          <layer depth="*" blockname="terrStone">
+            <resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all" />
+            <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all" />
+          </layer>
+          <layer depth="3" blockname="terrBedrock" />
+        </layers>
+        <weather name="default" prob="83">
+          <Temperature min="65" max="70" prob="1" />
+          <CloudThickness min="10" max="70" prob="65" />
+          <Precipitation min="0" max="0" prob="1" />
+          <Fog min="0" max="2" prob="1" />
+          <Wind min="3" max="22" prob="1" />
+        </weather>
+    </biome>
+
+    <biome name="gupBiomeOrc" topsoil_block="gupTerrainOrc" map-only="Test Biomes"
+      biomemapcolor="#00AA00" lootstage_modifier="0.35" lootstage_bonus="10"
+      gamestage_modifier="0.35" gamestage_bonus="10" difficulty="1">
+        <layers>
+          <!-- place custom top soil block -->
+          <layer depth="1" blockname="gupTerrainOrc" />
+          <layer depth="2" blockname="terrDirt" />
+          <layer depth="*" blockname="terrStone">
+            <resource blockname="terrOreIron" prob="0.6500" rwgGenerationType="all" />
+            <resource blockname="terrGravel" prob="0.7830" rwgGenerationType="all" />
+          </layer>
+          <layer depth="3" blockname="terrBedrock" />
+        </layers>
+        <weather name="default" prob="83">
+          <Temperature min="65" max="70" prob="1" />
+          <CloudThickness min="10" max="70" prob="65" />
+          <Precipitation min="0" max="0" prob="1" />
+          <Fog min="0" max="2" prob="1" />
+          <Wind min="3" max="22" prob="1" />
+        </weather>
+    </biome>
+  </append>
+
 </configs>
