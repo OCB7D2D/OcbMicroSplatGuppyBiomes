@@ -19,7 +19,7 @@
 			<!-- <biome-layer index="7"><property name="biome-weight-4" value="0.0"/></biome-layer> --><!-- texture id 8 -->
 
 			<!-- reduce biome layers for existing desert config (biome 5) -->
-			<biome-layer index="8"><property name="biome-weight-5" value="0.0"/></biome-layer><!-- texture id 7 -->
+			<!-- <biome-layer index="8"><property name="biome-weight-5" value="0.0"/></biome-layer> --><!-- texture id 7 -->
 			<biome-layer index="9"><property name="biome-weight-5" value="0.0"/></biome-layer><!-- texture id 20 -->
 			<biome-layer index="10"><property name="biome-weight-5" value="0.0"/></biome-layer><!-- texture id 12 -->
 			<biome-layer index="11"><property name="biome-weight-5" value="0.0"/></biome-layer><!-- texture id 11 -->
@@ -60,16 +60,25 @@
 				<property name="SplatUVScale" value="4,4"/>
 			</microsplat-patch>
 
-			<!-- overwrite main texture for existing desert biome (biome 5, uses texture id 8,9,10,11) -->
-			<!--
-			<microsplat-patch index="2">
-				<property name="Diffuse" value="#@modfolder:Resources/testGuppyBiomes.unity3d?TestBiomes_diff_tarray[2]"/>
-				<property name="Normal" value="#@modfolder:Resources/testGuppyBiomes.unity3d?TestBiomes_norm_tarray[2]"/>
-				<property name="Specular" value="#@modfolder:Resources/testGuppyBiomes.unity3d?TestBiomes_shao_tarray[2]"/>
+			<!-- overwrite main texture for existing desert biome (biome 5, uses texture id 7,20,12,11) -->
+			<microsplat-patch index="7">
+				<property name="Diffuse" value="#@modfolder:Resources/testBiomes01.unity3d?testBiomes01_diff_tarray[2]"/>
+				<property name="Normal" value="#@modfolder:Resources/testBiomes01.unity3d?testBiomes01_norm_tarray[2]"/>
+				<property name="Specular" value="#@modfolder:Resources/testBiomes01.unity3d?testBiomes01_shao_tarray[2]"/>
 				<property name="SwitchNormal" value="false"/>
 				<property name="SplatUVScale" value="4,4"/>
 			</microsplat-patch>
-			-->
+
+			<!-- customize existing layer that we left active for biome 5 -->
+			<biome-layer index="8">
+				<!-- disable features to show texture opaque -->
+				<property name="noise-active" value="false"/>
+				<property name="height-active" value="false"/>
+				<property name="slope-active" value="false"/>
+				<property name="erosion-active" value="false"/>
+				<property name="cavity-active" value="false"/>
+			</biome-layer>
+
 
 		</biomes-config>
 
